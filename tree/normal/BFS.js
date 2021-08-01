@@ -19,6 +19,9 @@ console.log(bfs(res))
 function cengxu(root) {
   var curLevel = [root]
   var result = []
+
+  if (!root || typeof root.val !== 'number') return []
+
   while (curLevel.length) {
     var nextLevel = []
     var curVal = []
